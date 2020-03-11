@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.cpk.entities.Patient" table="PATIENT">
+        <id name="uniqueIdentifyNumber" type="java.lang.String">
+            <column name="UNIQUE_IDENTIFY_NUMBER" />
+            <generator class="assigned" />
+        </id>
+        <property name="mobileNo" type="java.lang.String">
+            <column name="MOBILE_NO" />
+        </property>
+        <property name="patientName" type="java.lang.String">
+            <column name="PATIENT_NAME" />
+        </property>
+        <property name="gender" type="java.lang.String">
+            <column name="GENDER" />
+        </property>
+        <property name="email_address" type="java.lang.String">
+            <column name="EMAIL_ADDRESS" />
+        </property>
+    </class>
+</hibernate-mapping>
